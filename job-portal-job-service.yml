@@ -1,8 +1,8 @@
 spring:
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/job-portal-job
-    username: rajnishkushwaha
+    url: jdbc:postgresql://jobdb:5432/job_portal_job
+    username: postgres
     password: ${DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
 
@@ -23,6 +23,6 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://discovery:8761/eureka/
   instance:
-    prefer-ip-addrress: true
+    prefer-ip-address: true

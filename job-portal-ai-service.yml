@@ -1,11 +1,11 @@
 server:
-  port: 6000
+  port: 5007
 
 eureka:
   client:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://discovery:8761/eureka/
   instance:
-    prefer-ip-addrress: true
+    prefer-ip-address: true

@@ -2,7 +2,7 @@ spring:
 
   datasource:
     url: jdbc:postgresql://applicationdb:5432/job_portal_application
-    username: rajnishkushwaha
+    username: postgres
     password: ${DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
 

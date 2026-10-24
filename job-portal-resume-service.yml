@@ -1,7 +1,7 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/job-portal-resume
-    username: rajnishkushwaha
+    url: jdbc:postgresql://resumedb:5432/job_portal_resume
+    username: postgres
     password: ${DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
 
@@ -14,13 +14,13 @@ spring:
         format_sql: true
 
 server:
-  port: 5004
+  port: 5006
 
 eureka:
   client:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://discovery:8761/eureka/
   instance:
-    prefer-ip-addrress: true
+    prefer-ip-address: true
